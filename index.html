@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my website, this is a simple layout demo.</p>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Main Content Area</h2>
+            <p>This area can contain interactive JavaScript. Below is an example of a button that changes text.</p>
+            <button id="changeTextBtn">Click me to change text!</button>
+            <p id="dynamicText"></p>
+        </main>
+
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/Apple-iPhone-14-128GB-Blue/dp/B0BN733951/ref=sr_1_4?crid=2Z6LKVFH5O9DM&dib=eyJ2IjoiMSJ9.7qMkqRkGH47sDHbUVr3ACMwnHhu-ou7XrHJOcK2535Lwsb-wCXdnwApo7v7PFHqnFRee9-t927tPvIQCOdHs6V7GfAE8KQzBVkyga63ydT88uDEqjXuEhfKkMibY_d0mW-42YgyryRXu-wqVi4bC6jZfiDL_zr2_hikhcMJojBOoiKvTiMkZNHVsO7PzTqlARETHT6-uZPDOjfijk2gHRVN1oX0ZkbsA_NEaoBeWJKY.8mJKWvBNGfMUGTppmgl1BPjuwVmiEg37OtJxwfN4Psk&dib_tag=se&keywords=iphone&qid=1743465545&sprefix=iphone%2Caps%2C342&sr=8-4&th=1" target="_blank">
+                <img src="image.jpg" alt="Product Advertisement">
+            </a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
